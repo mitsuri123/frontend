@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="form-container">
+    <marquee><form id="registration-form"></marquee>
+      <h2>Registration Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="thank-you-message" style="display:none;">
+    <h2>Thank You!</h2>
+    <p>Your feedback has been submitted.</p>
+  </div>
+
+  <script src="eventhandle.js"></script>
+</body>
+</html>
